@@ -2,17 +2,17 @@
 name = "mca-paperwork-helper"
 requires-python = ">=3.14"
 dependencies = [
-    "requests",
-    "pymupdf",
-    "gspread",
+    "requests (>=2.34.2,<3.0.0)",
+    "pymupdf (>=2.1,<3.0)",
+    "gspread (>=6.2.1,<7.0.0)",
 ]
 
 [tool.poetry]
 package-mode = false
 
 [tool.poetry.group.test.dependencies]
-black = "*"
-ruff = "*"
+black = "^26.10.1"
+ruff = "^0.17.4"
 
 [tool.ruff]
 line-length = 120
